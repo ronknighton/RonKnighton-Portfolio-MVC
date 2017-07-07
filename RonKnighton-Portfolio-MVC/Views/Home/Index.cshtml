@@ -1,0 +1,624 @@
+﻿@model RonKnighton_Portfolio_MVC.Models.EmailModel
+
+<div id="wrapper">
+    <!--Start Wrapper-->
+
+
+    <div id="header" class="content-block header-wrapper">
+        <div class="header-wrapper-inner">
+            <section class="top clearfix">
+
+                <!--div class="pull-left">
+
+                    <img src="assets/images/HeadShot3.jpg" style="height:200px;"/>
+                </div>-->
+                <!--<div class="pull-left">
+
+                    <h1><a class="logo" href="index.html">RHK</a></h1>
+                </div>-->
+
+                <div class="pull-right">
+                    <a class="toggleDrawer" href="#"><i class="fa fa-bars fa-2x"></i></a>
+                </div>
+            </section>
+            <section class="center h4">
+                <div class="slogan">
+                    Ron Knighton
+                </div>
+                <div class="secondary-slogan h6">
+                    Pursuing Excellence in Full-Stack Software Development.
+                </div>
+                <h2 class="typed-text">
+                    Specializing in:
+                    <span class="element" data-elements="Bootstrap, .Net, CSS, HTML, Javascript, AngularJS, MVC5, C#, C++, Java, PHP, SQL Server"></span>
+                </h2>
+                <a id="scrollToContent" href="#CompletedProjects"><span class="btn btn-transparent">PROJECTS</span></a>
+                <a id="scrollToContact" href="#contact"><span class="btn btn-transparent">CONTACT</span></a>
+            </section>
+            <section class="bottom">
+                @*<a id="scrollToContent" href="#CompletedProjects">
+                        <img src="~/assets/images/arrow_up.png">
+                    </a>*@
+            </section>
+        </div>
+    </div><!-- header -->
+
+    <div class="content-block" id="CompletedProjects">
+        <a id="scrollToHome" href="#"><img class="my-img-responsive center_img" src="~/assets/images/arrow_up_dark.png"></a>
+        <div class="container">
+
+
+
+            <header class="block-heading clearfix">
+                <!--<a href="#" class="btn btn-o btn-lg pull-right">View All</a>-->
+                <h1>Completed Projects</h1>
+                <p>Full-Stack development examples</p>
+            </header>
+            <section class="block-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a class="recent-work" style="background-image: url('assets/images/JavScript.jpg'); ">
+                            <span class="btn btn-o-white" data-toggle="modal" data-target="#JSModal">Javascript Projects</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a class="recent-work" style="background-image: url('assets/images/Oops.jpg');">
+                            <span class="btn btn-o-white" data-toggle="modal" data-target="#EMSModal">Error Management Software</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a class="recent-work" style="background-image: url('assets/images/BioImg.jpg');">
+                            <span class="btn btn-o-white" data-toggle="modal" data-target="#BioModal">Go to Bio</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a class="recent-work" style="background-image: url('assets/images/VRVB.jpg');">
+                            <span class="btn btn-o-white" data-toggle="modal" data-target="#VRVBModal">Go to VRVB Blog</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a class="recent-work" style="background-image: url('assets/images/GreenRadar.jpg');">
+                            <span class="btn btn-o-white" data-toggle="modal" data-target="#AFModal">Auto Finder</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a class="recent-work" style="background-image: url('assets/images/MoneyManager.jpg'); ">
+                            <span class="btn btn-o-white" data-toggle="modal" data-target="#MMSModal">Money Management Software</span>
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+            <!--Modals-->
+            <div>
+                <!-- Javascript Modal -->
+                <div class="modal fade" id="JSModal" role="dialog">
+                    <div class="modal-dialog modal-lg ">
+
+                        <!-- Javascript Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" onclick="cleardata()">&times;</button>
+                                <h1 class="modal-title">Javascript Projects</h1>
+
+                            </div>
+                            <div class="modal-body">
+                                <!--Modal Navigation-->
+                                <ul class="nav nav-tabs" id="modalNav">
+                                    <li class="active"><a data-toggle="tab" href="#simplemath">Simple Math</a></li>
+                                    <li><a data-toggle="tab" href="#factorial">Factorial</a></li>
+                                    <li><a data-toggle="tab" href="#modulus">Modulus</a></li>
+                                    <li><a data-toggle="tab" href="#palindrome">Palindrome</a></li>
+                                    <li><a data-toggle="tab" href="#jacobsthal">Jacobsthal</a></li>
+                                </ul>
+
+
+                                <!--Start of Nav Pages-->
+                                <div class="tab-content">
+
+                                    <!--Simple Math Calculations-->
+                                    <div id="simplemath" class="tab-pane fade in active custom-pad">
+                                        <div class="container-fluid">
+                                            <form id="SMForm">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <h2>***Simple Number Calculations***</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="text-align:center">
+                                                    <div class="col-md-5"><h4>Enter 5 whole numbers (1-1,000,000)</h4></div>
+                                                    <div class="col-md-2"></div>
+                                                    <div class="col-md-5"><h4>The Results are :</h4></div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-5">
+
+                                                        Number 1: <input type="text" id="firstNumber" placeholder="Enter first number" /><br>
+                                                        Number 2: <input type="text" id="secondNumber" placeholder="Enter second number" /><br>
+                                                        Number 3:  <input type="text" id="thirdNumber" placeholder="Enter third number" /><br>
+                                                        Number 4:  <input type="text" id="fourthNumber" placeholder="Enter fourth number" /><br>
+                                                        Number 5:  <input type="text" id="fifthNumber" placeholder="Enter fifth number" /><br>
+
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="row">
+                                                            <input type="button" class="custom-button-lg" onClick="validate()" Value="Execute" />
+                                                        </div>
+                                                        <div class="row custom-pad">
+                                                            <button type="button" class="custom-button-sm" onclick="clearSM()">Clear Data</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-5">
+
+                                                        <span id="numResult"></span><br />
+                                                        <span id="minResult"></span><br />
+                                                        <span id="maxResult"></span><br />
+                                                        <span id="result"></span><br />
+                                                        <span id="sumResult"></span><br />
+                                                        <span id="meanResult"></span>
+
+                                                    </div>
+                                                </div>
+                                                <hr />
+
+                                            </form> <!--End Form-->
+                                            <div class="row">
+                                                <div class="col-md-12"><input type="button" id="ButSMCode" class="custom-button-md" Value="Show/Hide JS Code" /></div>
+                                            </div>
+                                            <div class="row custom-pad"><div class="col-md-12" id="SMCode"></div></div>
+                                        </div>
+                                    </div> <!--End Simple Math Calculations-->
+                                    <!--Factorial Calculations-->
+                                    <div id="factorial" class="tab-pane fade custom-pad">
+
+                                        <div class="container-fluid custom-modal">
+                                            <form id="facForm">
+                                                <div class="row"><div class="col-md-12"><h2>***Factorial Calculator***</h2></div></div>
+                                                <div class="row">
+                                                    <div class="col-md-5"><h4>Enter 2 whole numbers (1-150)</h4></div>
+                                                    <div class="col-md-2"></div>
+                                                    <div class="col-md-5"><h4>The Results are :</h4></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-5">
+
+                                                        <b>Enter number: </b><input type="text" id="factNumber" /><br />
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="row">
+                                                            <input type="button" class="custom-button-lg" onClick="calcFactorial()" Value="Execute" />
+                                                        </div>
+                                                        <div class="row custom-pad">
+                                                            <button type="button" class="custom-button-sm" onclick="clearFac()">Clear Data</button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <span id="factResult"></span>
+                                                    </div>
+                                                </div>
+                                                <hr />
+
+                                            </form><!--End Form-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <input type="button" id="ButFactCode" class="custom-button-md" Value="Show/Hide JS Code" />
+                                                </div>
+                                            </div>
+                                            <div class="row custom-pad"><div class="col-md-12" id="FactCode"></div></div>
+                                        </div>
+
+                                    </div><!--End Factorial-->
+                                    <!--Fizz-Buzz-->
+                                    <div id="modulus" class="tab-pane fade custom-pad">
+                                        <div class="container-fluid custom-modal">
+                                            <form id="FBForm">
+                                                <div class="row"><div class="col-md-12"><h2>***Fizz-Buzz Calculator***</h2></div></div>
+                                                <div class="row">
+                                                    <div class="col-md-5"><h4>Enter 2 whole numbers (1-100)</h4></div>
+                                                    <div class="col-md-2"></div>
+                                                    <div class="col-md-5"><h4>The Results are :</h4></div>
+                                                </div>
+                                                <div class="row ">
+                                                    <div class="col-md-5">
+
+
+                                                        <b>Input number 1:  </b><input type="text" id="FBFirstNum" /><br />
+                                                        <b>Input number 2: </b><input type="text" id="FBSecondNum" />
+
+
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="row">
+                                                            <input type="button" class="custom-button-lg" onClick="modulus()" Value="Execute" />
+                                                        </div>
+                                                        <div class="row custom-pad">
+                                                            <button type="button" class="custom-button-sm" onclick="clearFB()">Clear Data</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-5" id="FBResult1" style="word-wrap:break-word">
+                                                    </div>
+                                                </div>
+                                                <hr />
+
+                                            </form><!--End Form-->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <input type="button" id="ButFBCode" class="custom-button-md" Value="Show/Hide JS Code" />
+                                                </div>
+                                            </div>
+                                            <div class="row custom-pad"><div class="col-md-12" id="FBCode"></div></div>
+                                            <!--<div class="row custom-pad" id="FBCode"></div>-->
+                                        </div>
+                                    </div><!--End Fizz-Buzz Calculations-->
+                                    <!--Palindrome-->
+                                    <div id="palindrome" class="tab-pane fade custom-pad">
+                                        <div class="container-fluid custom-modal">
+                                            <form id="palForm">
+                                                <div class="row"><div class="col-md-12"><h2>***Palindrome Calculator***</h2></div></div>
+                                                <div class="row">
+                                                    <div class="col-md-5"><h4>Enter a word or words to be reversed</h4></div>
+                                                    <div class="col-md-2"></div>
+                                                    <div class="col-md-5"><h4>The Results are :</h4></div>
+                                                </div>
+                                                <div class="row ">
+                                                    <div class="col-md-5">
+                                                        <!--<form>-->
+                                                        <b>Input a word or phrase (Not case sensitive): </b><input type="text" id="palWord" /><br />
+                                                        <!--</form>-->
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="row">
+                                                            <input type="button" class="custom-button-lg" onClick="palindrome()" Value="Execute" />
+                                                        </div>
+                                                        <div class="row custom-pad">
+                                                            <button type="button" class="custom-button-sm" onclick="clearPal()">Clear Data</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <span id="palResult1"></span><br />
+                                                        <span id="palResult2"></span>
+                                                    </div>
+                                                </div>
+                                            </form><!--End Form-->
+                                            <hr />
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <input type="button" id="ButPalCode" class="custom-button-md" Value="Show/Hide JS Code" />
+                                                </div>
+                                            </div>
+                                            <div class="row custom-pad"><div class="col-md-12" id="PalCode"></div></div>
+                                            <!--<div class="row custom-pad" id="PalCode"></div>-->
+                                        </div>
+                                    </div><!--End Palindrome Calculations-->
+                                    <!--Jacobsthal Calculations-->
+                                    <div id="jacobsthal" class="tab-pane fade custom-pad">
+                                        <div class="container-fluid custom-modal">
+                                            <form id="jacForm">
+                                                <div class="row"><div class="col-md-12"><h2>***Jacobsthal Calculator***</h2></div></div>
+                                                <div class="row">
+                                                    <div class="col-md-5"><h4>Enter a number to tabulate value and efficiency.</h4></div>
+                                                    <div class="col-md-2"></div>
+                                                    <div class="col-md-5"><h4>The Results are :</h4></div>
+                                                </div>
+                                                <div class="row ">
+                                                    <div class="col-md-5">
+                                                        <!--<form>-->
+                                                        <b>Input a whole number 1-40: </b><input type="text" id="jacNumIn" /><br />
+                                                        <!--</form>-->
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="row">
+                                                            <input type="button" class="custom-button-lg" onClick="jacobsthal()" Value="Execute" />
+                                                        </div>
+                                                        <div class="row custom-pad">
+                                                            <button type="button" class="custom-button-sm" onclick="clearJac()">Clear Data</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <span id="jacResult1"></span><br />
+                                                        <span id="effResult1"></span><br />
+                                                        <span id="jacResult2"></span><br />
+                                                        <span id="effResult2"></span>
+                                                    </div>
+                                                </div>
+                                            </form><!--End Form-->
+                                            <hr />
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <input type="button" id="ButJacCode" class="custom-button-md" Value="Show/Hide JS Code" />
+                                                </div>
+                                            </div>
+                                            <div class="row custom-pad"><div class="col-md-12" id="JacCode"></div></div>
+                                            <!--<div class="row custom-pad" id="PalCode"></div>-->
+                                        </div>
+                                    </div><!--End Jacobsthal Calculations-->
+
+
+                                </div> <!--End Tab-Content (Navigation Sections)-->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" onclick="cleardata()" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Factorial Modal
+                <!-- EMS Modal -->
+                <div class="modal fade" id="EMSModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+
+                        <!-- EMS Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h1 class="modal-title">Error Management Software</h1>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <p>This will be a brief description of the Error Management Software and a link to the software.</p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="https://raygun.com/blog/better-error-management/" target="_blank" class="btn btn-primary">Go to EMS.</a>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- VRVB Modal -->
+                <div class="modal fade" id="VRVBModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+
+                        <!-- MMS Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h1 class="modal-title">Vocational Rehab Vet-Blog</h1>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <p>This will be a brief description of the Vocational Rehab Veteran's Blog.</p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="http://www.benefits.va.gov/vocrehab/" target="_blank" class="btn btn-primary">Go to VRVB</a>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Auto Finder Modal -->
+                <div class="modal fade" id="AFModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+
+                        <!-- AF Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h1 class="modal-title">Auto Finder Software</h1>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <p>This will be a brief description of the Auto-Finder Software.</p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="http://www.autotrader.com/" target="_blank" class="btn btn-primary">Go to Auto Finder.</a>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Bio Modal -->
+                <div class="modal fade " id="BioModal" role="dialog">
+                    <div class="modal-dialog modal-lg custom-modal">
+
+                        <!-- Bio Modal content-->
+                        <div class="modal-content" id="bio">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h1 class="modal-title">Ron Knighton Bio</h1>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>From 1990-2002, I worked in various technology fields to include electronic warfare, calibration, test and measurement, and simulation. I left technology in 2002 to start a real-estate investment firm.</p>
+                                            <p>Since the 2007-2008 market shift, I have worked in various fields such as sales, marketing, web development, and equipment maintenance. Since 2014, I have continued to operate my own business while attending college full-time online in pursuit of a degree in an IT related field. </p>
+                                            <p>I am currently attending an 18 week intensive software development boot-camp. </p>
+                                        </div>
+                                    </div>
+
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col-md-12" style="align-content:center">
+                                            <input type="button" id="ButResume" class="custom-button-md" Value="Show/Hide Resume" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="custom-pad" id="resume">
+                                            <object width="850" height="1150" data="assets/Documents/Ron Knighton Resume June 2017.pdf"></object>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="modal-footer">
+                                <a href="https://www.linkedin.com/in/ronknighton/" target="_blank" class="btn btn-primary">See Ron's LinkedIn Profile.</a>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- MMS Modal -->
+                <div class="modal fade" id="MMSModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+
+                        <!-- MMS Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h1 class="modal-title">Money Management Software</h1>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <p>This will be a brief description of the functionality of the Money Management Software, along with a link to the software page.</p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="https://www.google.com/#q=money+management+software" target="_blank" class="btn btn-primary">Go to Money Management Software</a>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div><!--End Modals-->
+        </div>
+    </div><!-- #completed projects -->
+
+    <div class="content-block" id="contact">
+        <a id="scrollToHome2" href="#"><img class="my-img-responsive center_img" src="~/assets/images/arrow_up.png"></a>
+        <div class="row col-md-12"><span>    </span></div>
+        <div class="container text-center custom-pad">
+            <header class="block-heading cleafix">
+                <h1>Contact Me</h1>
+                <span>rhksoftdev@gmail.com</span>                
+            </header>
+        </div>
+        @*<section class="block-body">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <form class="" role="form">
+                            <div class="form-group">
+                                <input type="email" class="form-control form-control-white" id="subject" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control form-control-white" id="exampleInputEmail2" placeholder="Enter email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control form-control-white" placeholder="Write Something" required></textarea>
+                            </div>
+                            <input type="submit" class="btn btn-o-white" value="Say Hello">
+                        </form>
+                    </div>
+                </div>
+            </section>*@
+
+        @{
+            var message = TempData["AlertMessage"] ?? string.Empty;
+        }
+
+
+        }
+        <section class="block-body ">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+
+                    @using (Html.BeginForm("Contact", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                      
+                        @Html.ValidationSummary("", new { @class = "text-danger" })
+
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.FromName, new { @class = "col-md-2 control-label" })
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(m => m.FromName, new { @class = "form-control form-control-white", placeholder = "Your name." })
+                                @Html.ValidationMessageFor(model => model.FromName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.FromEmail, new { @class = "col-md-2 control-label" })
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(m => m.FromEmail, new { @class = "form-control form-control-white", placeholder = "example@email.com" })
+                                @Html.ValidationMessageFor(model => model.FromEmail, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Subject, new { @class = "col-md-2 control-label" })
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(m => m.Subject, new { @class = "form-control form-control-white", placeholder = "Subject" })
+                                @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Body, new { @class = "col-md-2 control-label" })
+                            <div class="col-md-10">
+                                @Html.TextAreaFor(m => m.Body, new { @class = "form-control form-control-white", placeholder = "Content of your message." })
+                                @Html.ValidationMessageFor(model => model.Body, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </section>
+
+    </div><!-- #contact -->
+
+</div>
+
+
+
+
+
+
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/assets/js/script.js"></script>
+    <script src="~/assets/js/JavaScriptExercises.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+    <script src="~/assets/js/DisplayJSCode.js"></script>
+    <script src="~/assets/js/type.js"></script>
+
+    <script type="text/javascript">
+        var message = '@message';
+        if (message)
+            alert(message);
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+    <script type="text/javascript">
+        /* Typed
+            ================================================== */
+        $(".element").each(function () {
+            var $this = $(this);
+            $this.typed({
+                strings: $this.attr('data-elements').split(','),
+                typeSpeed: 100, // typing speed
+                backDelay: 3000 // pause before backspacing
+            });
+        });
+    </script>
+}
+
+
+
+
+
+
+

@@ -1,0 +1,157 @@
+﻿.full-screen {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+.modal-content{
+    background-color: #a2c2d2;
+}
+.custom-modal-content {
+    background-color: #a2c2d2;
+}
+
+.custom-modal {
+    min-height: 1000px;
+    text-align: center;
+    align-content: center;
+    padding-top: 30px;
+    /*background-color: #a2c2d2;*/
+}
+
+.custom-pad {
+    padding-top: 30px;
+}
+
+.custom-button-lg {
+    background-color: #129e2f; /*green*/
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+.custom-button-md {
+    background-color: #bfbdbd;/*Grey*/
+    border:none;
+    color: black;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 12px;
+}
+
+.custom-button-sm {
+    background-color: #c52d2d; /* Orange Red */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 12px;
+}
+
+
+input[type=text], select {
+    /*width: 100%;*/
+    /*padding: 12px 20px;*/
+    /*margin: 8px 0;*/
+    /*display: inline-block;*/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number], select {
+    /*width: 100%;*/
+    /*padding: 12px 20px;*/
+    /*margin: 8px 0;*/
+    /*display: inline-block;*/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    /*width: 100%;*/
+    background-color: #4CAF50;
+    color: white;
+    /*padding: 14px 20px;*/
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+
+.container-fluid {
+    border-radius: 5px;
+    border: 2px solid #3A4F52;
+    background-color: #f2f2f2;
+    color: #3A4F52;
+    min-height: 400px;
+    text-align: center;
+    align-content: center;
+    padding-top: 30px;
+}
+.modal h1, h2, h3{
+    font-weight:900;
+    color:#187eb1;
+    font-family: 'Orbitron', sans-serif;
+}
+
+hr {
+    height: 1px;
+    color: seagreen;
+    background-color: aquamarine;
+}
+
+
+.custom-overflow {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.custom-size-max {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.custom-bold-red {
+    color: red;
+    font: bolder;
+    text-transform: uppercase;
+}
+
+.nav-tabs a {
+    font-weight:600;
+    color: aliceblue;
+}
+
+.nav-tabs a:hover {
+    color: #3b5f80;
+}
+
+#bio p {
+    text-align:left;
+}
+
+#resume {
+    align-items:center;
+}
